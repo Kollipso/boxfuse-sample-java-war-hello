@@ -1,6 +1,6 @@
 <html>
 <head>
-    <title>Boxfuse Kollipso SuperApp: success!</title>
+    <title>Boxfuse Kollipso SuperApp: success!!</title>
 </head>
 <body style="text-align: center">
 <h1>Congratulations!</h1>

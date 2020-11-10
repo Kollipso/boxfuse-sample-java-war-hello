@@ -27,7 +27,7 @@ pipeline {
         script {        
         withCredentials([usernamePassword(credentialsId: 'deployer', usernameVariable: 'TOMCAT_USER', passwordVariable: 'TOMCAT_PASSWORD')]) {
         sh """
-          CURL_RESPONSE=\$(curl -v -u $TOMCAT_USER:$TOMCAT_PASSWORD -T target/*.war "http://34.91.16.195:80/manager/text/deploy?path=/hello1&update=true")    
+          CURL_RESPONSE=\$(curl -v -u $TOMCAT_USER:$TOMCAT_PASSWORD -T target/*.war "http://34.90.40.171:80/manager/text/deploy?path=/hello1&update=true")    
           if [[ \$CURL_RESPONSE == *"FAIL"* ]]; then
             echo "war deployment failed"
             exit 1
